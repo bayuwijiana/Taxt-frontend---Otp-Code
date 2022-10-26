@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>C-OTP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 </head>
@@ -12,93 +12,171 @@
     body {
         margin: auto;
         width: 50%;
+        line-height: auto;
     }
-    .c-2{
+
+    .c-1 a p {
+        color: #072b52;
+        letter-spacing: 3px;
+        word-spacing: 10px;
+    }
+
+    .c-2 {
         height: 56px;
-    } ad
-    .c-2 img{
+
+    }
+
+    .c-2,
+    .c-10 {
+        background-color: #072b52;
+        color: white;
+    }
+
+    .c-4,
+    .c-7 {
+        color: #072b52;
+        font-family: Times, serif;
+    }
+
+    .c-2 img {
         width: 150px;
         max-width: 100%;
     }
 
+    .c-3-img {
+        width: 600px;
+        max-width: 100%;
+    }
+
+    .c-5 p {
+        letter-spacing: 1px;
+    }
+
+    .c-6 col img {
+        width: 190px;
+        max-width: 100%;
+    }
+
+    .c-7 col p {
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        font-family: Times, serif;
+        font-size: 40px;
+
+    }
+
+    .c-8 col img {
+        width: 120px;
+        max-width: 100%;
+    }
+
+    .c-9 col-2 img {
+        height: 32px;
+    }
+
+    .c-10 {
+        font-size: 14px;
+    }
 </style>
 
 <body>
-    <div class="container ">
-        <div class="row c-1 ">
-            <div class="col-6 m-auto">
-                <p>BOOKING ROOMS | BLOG EVENTS</p>
+    <div class="container mb-5 bg-body rounded card">
+        <div class="row  c-1 d-flex align-items-center lh-1 pt-2    ">
+            <div class="col-12 text-center">
+                <a href="#" class="text-decoration-none title-one p-5">
+                    <p>BOOKING ROOMS | BLOG EVENTS </p>
+                </a>
             </div>
         </div>
-        <div class="row bg-primary c-2">
-            <div class="col d-flex justify-content-center">
-                <img src="" alt="your logo" />
+        <div class="row  c-2">
+            <div class="col d-flex justify-content-center pt-3">
+                <img src="images/logo_4.png" alt="your logo" />
             </div>
         </div>
         <div class="row c-3">
-            <div class="col d-flex justify-content-center">
-                <img src="" alt="image-hotel" />
+            <div class="col d-flex justify-content-center pt-2">
+                <img src="images/INTRO.png" alt="image-hotel-room" class="m-auto" />
             </div>
         </div>
-        <div class="row text-primary c-4">
-            <div class="col text-center">
-                <h1>Kode OTP: 121002</h1>
+        <div class="row c-4 ">
+            <div class=" col text-center fw-bold  ">
+                <p class="text-muted pt-4 fs-1 ">Kode OTP: 121002</p>
             </div>
         </div>
-        <div class="row c-5">
-            <div class="col text-center">
-                <p >
-                    <b> Hey there,</b><br/>
-                    thank you for choosing our place for your recent stay. It's a
-                    pleasure to have you as our guest. We would like to take this time
-                    to thank you for your accomodation and we hope to see you again
+        <div class="row  my-4 ">
+            <div class="col text-center c-5 ">
+                <p class="fs-6">
+                    <b> Hey there,</b><br />
+                    thank you for choosing our place for your recent stay. <br> It's a
+                    pleasure to have you as our guest. <br> We would like to take this time
+                    to thank you for your accomodation <br> and we hope to see you again
                     soon.
                 </p>
             </div>
         </div>
-        <div class="row c-6 d-flex justify-content-center">
-            <div class="col-lg-3 d-flex justify-content-center">
-                <img src="" alt="breakfast-room" />
+        <div class="row  c-6 d-flex justify-content-center">
+            <div class="col-lg-3 d-flex justify-content-center ">
+                <img src="images/01_1.png" alt="breakfast-room" class="m-auto" />
             </div>
-            <div class="col-lg-3 d-flex justify-content-center">
-                <img src="" alt="hotel-room" />
+            <div class="col-lg-3 d-flex justify-content-center ">
+                <img src="images/02_1.png" alt="hotel-room" class="m-auto" />
             </div>
-            <div class="col-lg-3 d-flex justify-content-center">
-                <img src="" alt="hotel-room" />
+            <div class="col-lg-3 d-flex justify-content-center ">
+                <img src="images/03_1.png" alt="hotel-bed" class="m-auto" />
             </div>
         </div>
-        <div class="row c-7">
-            <div class="col text-center text-primary">
+        <div class="row c-7 py-4">
+            <div class="col text-center fs-5 ">
                 <p>Keep sharing with us by tagging <b>#YourCompany</b></p>
             </div>
         </div>
-        <div class="row c-8">
-            <div class="col d-flex justify-content-center">
-                <img src="" alt="your-logo" />
+        <div class="row  c-8">
+            <div class="col d-flex justify-content-center py-2">
+                <img src="images/logo-blu.png" alt="your-logo" />
             </div>
         </div>
-        <div class="row c-9 d-flex justify-content-center">
-            <div class="col-2  "><img src="" alt="Facebook" /></div>
-            <div class="col-2 "><img src="" alt="Tiktok" /></div>
-            <div class="col-2 "><img src="" alt="Instagram" /></div>
-            <div class="col-2 "><img src="" alt="youtube" /></div>
+        <div class="row  c-9 d-flex justify-content-center gap-1 py-3 mb-2">
+            <div class="col-2  ">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook2x.png"
+                        alt="Facebook" /></a>
+            </div>
+            <div class="col-2 ">
+                <a href="https://twitter.com/" target="_blank"><img src="images/twitter2x.png" alt="Tiktok" /></a>
+            </div>
+            <div class="col-2 ">
+                <a href="https://instagram.com/" target="_blank"><img src="images/instagram2x.png"
+                        alt="Instagram" /></a>
+            </div>
+            <div class="col-2 ">
+                <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube2x.png" alt="youtube" /></a>
+            </div>
         </div>
-        <div class="row c-10 bg-primary">
-            <div class="col text-center">
+        <div class="row c-10">
+            <div class="col text-center p-4 ">
                 <p>
-                    Terms & Conditions <br> Integer eget nibh vel massa gravida ullamcorper.
+                    <a href="" class="text-white"> Terms & Conditions </a><br>
+                    Integer eget nibh vel massa gravida ullamcorper.
                     Sed a viverra ante. Nullam posuere pellentesque lectus, nec vehicula
                     felis rutrum ac. Maecenas porta facilisis turpis, eget imperdiet
                     purus.
-                </p><br>
-                <p> © Copyright 2021. YourBrand All Rights Reserved. Manage
-                    Preferences | Unsubscribe</p>
+                </p>
+                <p> © Copyright 2021. YourBrand All Rights Reserved. <br>
+                    <a href="" class="text-white"> Manage Preferences </a> | <a href="" class="text-white"> Unsubscribe
+                    </a>
+                </p>
             </div>
         </div>
-        <div class="row c-11 text-center">
+        <div class="row  c-11 text-center">
             <div class="col">
-                <img src="" alt="Designed with BEE" />
-                <p>Designed with BEE</p>
+                <a href="https://www.designedwithbee.com/" target="_blank">
+                    <img src="" alt="Designed with BEE" />
+                </a>
+                <p>
+                    <a href="https://www.designedwithbee.com/" target="_blank"
+                        class="  text-muted text-decoration-none">
+                        Designed with BEE
+                    </a>
+                </p>
             </div>
         </div>
     </div>
